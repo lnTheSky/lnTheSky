@@ -13,6 +13,8 @@
   <a href="https://t.me/lunaraim2"><img src="https://img.shields.io/badge/LunarAim%202-%40lunaraim2-17C3E1?style=for-the-badge&logo=telegram&logoColor=white" alt="LunarAim 2 Telegram channel"></a>
 </p>
 
+<p align="center"><a href="README.md">English</a> · <a href="README.ru-RU.md">Русский</a> · <a href="README.zh-CN.md">简体中文</a></p>
+
 <details>
 <summary>Table of contents</summary>
 <br>
