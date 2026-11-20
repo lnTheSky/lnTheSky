@@ -63,14 +63,20 @@ I write production-oriented code in **C++ and Python**, work comfortably in **C*
 
 LunarAim is one long-running engineering project that can be viewed through two separate repositories and two technology generations:
 
-<p align="center">
-  <a href="https://github.com/lnTheSky/lunar_v2_showdown">
-    <img src="https://raw.githubusercontent.com/lnTheSky/lunar_v2_showdown/main/assets/brand/lunar-aim-banner.png" alt="LunarAim 2.2 — C++ redesign" width="48%">
-  </a>
-  <a href="https://github.com/lnTheSky/LunarEngine_Open">
-    <img src="https://raw.githubusercontent.com/lnTheSky/LunarEngine_Open/main/media/image.png" alt="LunarEngine Open — Python predecessor" width="48%">
-  </a>
-</p>
+<table>
+  <tr>
+    <td width="50%" valign="middle" align="center">
+      <a href="https://github.com/lnTheSky/lunar_v2_showdown">
+        <img src="https://raw.githubusercontent.com/lnTheSky/lunar_v2_showdown/main/assets/brand/lunar-aim-banner.png" alt="LunarAim 2.2 — C++ redesign" width="100%">
+      </a>
+    </td>
+    <td width="50%" valign="middle" align="center">
+      <a href="https://github.com/lnTheSky/LunarEngine_Open">
+        <img src="https://raw.githubusercontent.com/lnTheSky/LunarEngine_Open/main/media/image.png" alt="LunarEngine Open — Python predecessor" width="100%">
+      </a>
+    </td>
+  </tr>
+</table>
 
 ### LunarAim 2.2 — C++ redesign
 
