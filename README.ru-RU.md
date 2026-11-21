@@ -1,10 +1,7 @@
 <div align="center">
   <h1>Привет, я Алекс 👋</h1>
   <p><strong>Исследователь безопасности · Reverse Engineer · Инженер компьютерного зрения</strong></p>
-  <p>
-    Я создаю и исследую высокопроизводительные системы на пересечении<br>
-    безопасности ПО, native Windows-разработки и computer vision в реальном времени.
-  </p>
+  <p>Computer Security в <strong>HSE MIEM</strong> · выпуск <strong>2031</strong></p>
 </div>
 
 <p align="center">
@@ -25,24 +22,17 @@
 - [Главный проект](#главный-проект)
   - [LunarAim 2.2 — redesign на C++](#lunaraim-22--redesign-на-c)
   - [LunarEngine Open — предшественник на Python](#lunarengine-open--предшественник-на-python)
-- [Как я работаю](#как-я-работаю)
 - [Контакты](#контакты)
 
 </details>
 
 ## Обо мне
 
-Я изучаю Computer Security в **HSE MIEM**, выпуск — **2031 год**. Моя работа объединяет reverse engineering, security testing, native systems programming и прикладное машинное обучение.
-
-Мне особенно интересно понимать поведение ПО на границе между high-level приложением, операционной системой, аппаратным ускорением и данными реального времени. Я люблю разбирать систему, измерять происходящее на практике и собирать критический путь заново с явными ограничениями по производительности и надёжности.
+Я изучаю Computer Security в **HSE MIEM**, выпуск — **2031 год**. Работаю на пересечении reverse engineering, security testing, native Windows systems и прикладного машинного обучения.
 
 ## Направления
 
-- **Reverse engineering и security research** — binary analysis, анализ поведения ПО, Windows internals и responsible vulnerability research.
-- **Security testing** — binary-focused testing, digital forensics и non-web network security testing.
-- **Классическое компьютерное зрение** — OpenCV pipeline, сегментация по цветовым пространствам, геометрический анализ, morphology, filtering и высокопроизводительная обработка изображений.
-- **Deep learning для vision** — детекторы семейства YOLO, workflow Ultralytics, подготовка датасетов, обучение, валидация, анализ экспериментов и интеграция inference.
-- **Performance engineering** — profiling, debugging, анализ latency, оптимизация pre-processing/inference/post-processing и снижение overhead всего pipeline.
+Reverse engineering и binary analysis, digital forensics, non-web network security testing, компьютерное зрение на OpenCV, детекция на YOLO/Ultralytics, работа с датасетами, обучение моделей, profiling, debugging и latency-focused inference pipelines.
 
 ## Основной стек
 
@@ -54,16 +44,15 @@
   <a href="https://opencv.org/"><img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV"></a>
   <a href="https://pytorch.org/"><img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch"></a>
   <a href="https://github.com/ultralytics/ultralytics"><img src="https://img.shields.io/badge/Ultralytics%20YOLO-111F68?style=for-the-badge&logoColor=white" alt="Ultralytics YOLO"></a>
+  <a href="https://developer.nvidia.com/cuda-toolkit"><img src="https://img.shields.io/badge/CUDA-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="CUDA"></a>
   <a href="https://developer.nvidia.com/tensorrt"><img src="https://img.shields.io/badge/TensorRT-76B900?style=for-the-badge&logo=nvidia&logoColor=white" alt="TensorRT"></a>
   <a href="https://learn.microsoft.com/en-us/windows/win32/"><img src="https://img.shields.io/badge/Win32-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="Win32 API"></a>
   <a href="https://cmake.org/"><img src="https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white" alt="CMake"></a>
 </p>
 
-Я свободно пишу на **C++ и Python**, уверенно работаю с **C** и использую **Assembly**, когда это нужно для низкоуровневого анализа. Также у меня есть практический опыт profiling, debugging, Windows-native API, GPU inference и подготовки данных для computer-vision моделей.
-
 ## Главный проект
 
-LunarAim — один большой инженерный проект, который можно рассматривать через два репозитория и два поколения технологий:
+LunarAim — один большой проект, представленный двумя репозиториями и двумя поколениями технологий.
 
 <table>
   <tr>
@@ -84,37 +73,13 @@ LunarAim — один большой инженерный проект, кото
 
 [Открыть showcase LunarAim V2 →](https://github.com/lnTheSky/lunar_v2_showdown)
 
-Текущее поколение — **native redesign на C++** с явной архитектурой runtime и структурированным frontend bridge. Оно всё ещё развивается и не является EOL-проектом.
-
-Проект объединяет:
-
-- модульную orchestration runtime и наблюдаемый lifecycle;
-- native UI bridge на базе WebView2;
-- Win32 Raw Input и desktop capture через DirectX;
-- заменяемые контракты detector, trigger и mouse;
-- OpenCV/Colorbot и YOLO-based detection paths;
-- CUDA/TensorRT с динамической границей GPU-модуля;
-- profiling, telemetry и проектирование pipeline с фокусом на latency.
-
-Публичный репозиторий — это **technical showcase**. Production runtime и proprietary implementation остаются закрытыми.
+Текущее активно развиваемое поколение: native C++ runtime со структурированным WebView2 bridge, модульными контрактами detector/trigger/mouse, Win32 и DirectX, OpenCV/YOLO и ускорением CUDA/TensorRT. Публичный репозиторий — technical showcase, production implementation остаётся закрытой.
 
 ### LunarEngine Open — предшественник на Python
 
 [Открыть архивный LunarEngine →](https://github.com/lnTheSky/LunarEngine_Open)
 
-Старое поколение — **research snapshot на Python 3.11**. Оно показывает ранний экспериментальный подход: desktop UI на Flet, обработку цветов через OpenCV, model-assisted detection, конфигурационно-ориентированную итерацию и эксперименты с Windows input/output.
-
-Репозиторий сохранён как архив, а не как usable release. В нём прямо указано, что код устарел, не поддерживается и не предназначен для запуска или адаптации.
-
-## Как я работаю
-
-Мои сильнейшие проекты объединяют low-level понимание с измеримым поведением системы:
-
-1. **Понимаю data path.** Анализирую нужное поведение, определяю реальные inputs/outputs и формулирую измеримые параметры.
-2. **Строю минимальный эксперимент.** Проверяю алгоритм или integration point отдельно до встраивания в runtime.
-3. **Измеряю каждый этап.** Отдельно профилирую capture, pre-processing, inference, post-processing, control logic и output.
-4. **Делаю выводы из данных.** Готовлю датасеты, обучаю модели, анализирую ошибки, сравниваю эксперименты и превращаю наблюдения в изменения.
-5. **Интегрирую end to end.** Переношу результат в работающее приложение с явными границами, diagnostics и возможностью заменять реализации.
+Старый research snapshot на Python 3.11, документирующий ранние эксперименты с UI, computer vision, конфигурацией и Windows I/O. Код устарел и сохранён только как исторический и образовательный reference.
 
 ## Контакты
 
